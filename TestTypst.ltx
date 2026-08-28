@@ -1,0 +1,62 @@
+% !BIB program = biber
+
+% The amsart document class really simplifies the entering and formatting of mathematics.
+%\documentclass[12pt]{amsart}
+\documentclass[12pt]{article}
+\date{March 31, 2026}
+% Next Line sets 1 inch margins
+\usepackage[margin=1.0in]{geometry}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{tikz}
+%\usepackage{permute}
+\usetikzlibrary{decorations.markings,calc,intersections,through,backgrounds,arrows}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[version=4]{mhchem}
+%\usepackage{times}
+\usepackage{lipsum}
+% Next line uses package to enable double spacing - see
+\usepackage{setspace}
+\renewcommand\abstractname{}
+% Uncomment ONE of the next two lines to use bibtex-chicago 
+%\usepackage[authordate,backend=biber,noibid]{biblatex-chicago}
+%\usepackage[notes,backend=biber,noibid]{biblatex-chicago}
+\usepackage[notes,short,backend=biber,noibid]{biblatex-chicago}
+%\usepackage[notes,short,backend=biber]{biblatex-chicago}
+%\usepackage{concmath,amssymb,latexsym,eulervm}
+% On next line, enter the name of your .bib file (no extension)
+%\bibliography{My Library}	
+\bibliography{../MyLibrary}	
+
+\begin{document}
+\title{Essay Title}
+
+\author{Chris Driscoll --- 720 112 599\\
+chris.driscoll@mail.utoronto.ca}
+\maketitle
+%\abstract{ABSTRACT: Once upon a time}
+
+\thispagestyle{empty}
+\newpage
+\pagenumbering{arabic} 
+%Start doublespacing with next line:
+
+\doublespace
+
+%When using git with \LaTeX, you should put each sentence on a separate line.
+%This makes it much easier for git to highlight changes.\\
+
+%For footnote citations:
+%Initial citation:  	\footfullcite[33]{Kozloff2012}
+%Subsequent: 		\autocite[91]{Hassan1953}
+%Bibliography only:	\nocite{Hassan1953}
+
+\newpage
+
+\singlespace
+
+\printbibliography
+
+\end{document}
