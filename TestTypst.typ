@@ -1,16 +1,18 @@
 #import "ChicagoStylesheet.typ": chicago-essay
 
 #show: doc => chicago-essay(
-  title: "The Analysis of Modern Typography",
-  author: "Jane Doe",
-  course: "ENG 101",
-  instructor: "Dr. Smith",
+  title: "The Location of the Land of Punt",
+  author: "Chris Driscoll",
+  course: "NMC423H1",
+  instructor: "Oren Siegel",
+  date: "September 30, 2026",
   doc,
 )
 
 // #outline(target: heading.where(level: 1))
 
 = Introduction
+
 Your first paragraph goes here. Notice how Typst automatically indents this line by half an inch and double-spaces the entire block of text according to standard formatting guidelines.
 This sentence follows on the next line.
 
