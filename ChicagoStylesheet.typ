@@ -30,7 +30,7 @@
   set par(
     leading: 1em, // Double spacing (1em extra leading on top of 1em font height)
     justify: false, // Chicago style uses ragged right / left-aligned text
-    first-line-indent: 0.5in,
+    first-line-indent: (amount: 2em, all: true),
   )
 
   // Paragraph spacing

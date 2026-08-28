@@ -1,4 +1,5 @@
 #import "ChicagoStylesheet.typ": chicago-essay
+#set cite(style: "chicago-notes")
 
 #show: doc => chicago-essay(
   title: "The Location of the Land of Punt",
@@ -18,12 +19,14 @@ This sentence follows on the next line.
 
 This sentence begins a new paragraph by leaving a line after the previous sentence. This is quite convenient.
 
-= Conclusion
-Your concluding thoughts go here. Page numbers will automatically display in the top right corner starting with page 2.
+Our first quotation is from Hassan @Hassan1953[p.~45].
 
+Our second quotation is also from Hassan @Hassan1953[p.~90].
+
+Our third quotation is from Allen @Allen2010[p.167].
 // Chicago Style Bibliography / References
 #pagebreak()
-#align(center)[#strong("Bibliography")]
-#v(1em)
+#bibliography("MyLibrary.bib")
+
 
 #set par(first-line-indent: 0pt, hanging-indent: 0.5in)
