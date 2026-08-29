@@ -11,13 +11,14 @@
     paper: "us-letter",
     margin: 1in,
     // Header with page number on the top right, starting page numbering on page 2
-    header: context {
+    /*  header: context {
       let page_num = counter(page).get().first()
       if page_num > 1 {
         align(right, [#page_num])
       }
     },
     numbering: none, // Disable automatic numbering to control first-page exclusion manually via header
+    */
   )
 
   // Text setup: 12pt serif font (Times New Roman equivalent)
